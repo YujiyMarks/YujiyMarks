@@ -15,6 +15,11 @@ int soma_dois(int a) { // declaração de uma função - 'tipo do retorno' 'nome
     return a + 2;
 }
 
+int funcao(num) // declarção tradicional de uma função
+    int num; {
+        printf("%d",num);
+    }
+
 
 int main(void) { // função principal do C
 
@@ -147,6 +152,8 @@ int main(void) { // função principal do C
     // FUNÇÂO
     int resultado = soma_dois(a); // comando para chamar uma função 'nome da função'('variaveis');
     printf("%d\n",resultado);
+
+    printf("%d\n",funcao(20000));
 
 
     int m = 0x15; // definição de um valor hexadecimal
@@ -288,6 +295,26 @@ int main(void) { // função principal do C
     */
 
 
+
+   // REGISTROS
+    struct teste { // declaração de um registro
+        int numero;
+        char letra;;
+    };
+
+    struct teste t1; // criação de um registro
+
+    t1.numero = 19; // definição de valor a um parametro do registro
+
+    printf("%d\n",t1.numero); // chamando o valor de um registro
+
+    // struct teste2 t2 = {int number, char letter}
+    
+    /*struct {
+        int number;
+        char letter;
+    }  t2, t3;*/
+    
 
 
 
